@@ -2,9 +2,13 @@ import * as program from "commander";
 
 import {NewCommand} from './commands/new';
 import {ExecCommand} from './commands/exec';
+import {VersionCommand} from './commands/version';
 
 program
-  .version('0.1.0')
+  .option("-v, --version", "output the version number", () =>{
+    let v = new VersionCommand();
+    console.log(v.getVersions())
+  })
   .description(
 '******************************************** '+'\n'+
 '  _____           _   _ ___    ____ _     ___  '+'\n'+

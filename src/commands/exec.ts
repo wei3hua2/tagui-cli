@@ -2,7 +2,7 @@ import * as fs from 'fs';
 import * as shell from 'shelljs';
 
 import { ProjectUtil } from '../utils/projects';
-import { ProjectConfig } from '../models/ProjectConfig'
+import { ProjectConfig } from '../models/ProjectConfig';
 
 export class ExecCommand {
 
