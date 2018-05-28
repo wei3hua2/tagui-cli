@@ -1,0 +1,27 @@
+{
+  "name": "tagui-cli",
+  "version": "0.0.1",
+  "description": "CLI for Tag UI",
+  "main": "tui.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/tui.js",
+    "test": "mocha --reporter spec"
+  },
+  "keywords": [
+    "tagui"
+  ],
+  "author": "James Chong",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/commander": "^2.12.2",
+    "@types/shelljs": "^0.8.0",
+    "mocha": "^5.2.0",
+    "typescript": "^2.8.3"
+  },
+  "dependencies": {
+    "commander": "^2.15.1",
+    "shelljs": "^0.8.2",
+    "tagui": "^3.5.5"
+  }
+}
